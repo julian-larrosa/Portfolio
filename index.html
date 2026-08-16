@@ -252,11 +252,50 @@
               </a>
             </article>
           </div>
-<!--
+
           <div class="col-lg-6">
             <article class="project-card h-100">
               <div class="project-top">
                 <span class="project-number">02</span>
+                <span class="project-status">Completado</span>
+              </div>
+
+              <div class="project-icon">👗</div>
+              <h3>MyCloset</h3>
+
+              <p>
+                Aplicación web para gestionar tu armario personal. Organiza tu ropa,
+                crea outfits y lleva un registro de tus prendas favoritas.
+              </p>
+
+              <ul>
+                <li>Autenticación segura con JWT y Spring Security.</li>
+                <li>API REST completa para gestión de prendas.</li>
+                <li>Backend robusto con Spring Boot y PostgreSQL.</li>
+                <li>Desplegado en Render con Docker.</li>
+              </ul>
+
+              <div class="tags mb-4">
+                <span>Java 25</span><span>Spring Boot 4</span><span>Spring Security</span>
+                <span>JWT</span><span>PostgreSQL</span><span>Neon</span>
+                <span>Docker</span><span>Render</span><span>Bootstrap</span>
+              </div>
+
+              <div class="project-links">
+                <button class="btn-visit" data-bs-toggle="modal" data-bs-target="#myclosetModal">
+                  Ver proyecto ↗
+                </button>
+                <a class="project-link" href="https://github.com/julian-larrosa/mycloset" target="_blank" rel="noreferrer">
+                  Ver repositorio →
+                </a>
+              </div>
+            </article>
+          </div>
+<!--
+          <div class="col-lg-6">
+            <article class="project-card h-100">
+              <div class="project-top">
+                <span class="project-number">03</span>
                 <span class="project-status">Planificado</span>
               </div>
               <hidden>
@@ -290,6 +329,32 @@
       </div>
     -->
     </section>
+
+    <!-- Modal MyCloset -->
+    <div class="modal fade" id="myclosetModal" tabindex="-1" aria-labelledby="myclosetModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myclosetModalLabel">MyCloset - Capturas</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-images">
+              
+              <img src="images/Inicio.png" alt="Captura de MyCloset"> 
+              <img src="images/Menu principal.png" alt="Captura de MyCloset">
+              <img src="images/Menu principal 2.png" alt="Captura de MyCloset">
+              <img src="images/Categoria.png" alt="Captura de MyCloset"> 
+              <img src="images/Nueva categoria.png" alt="Captura de MyCloset">   
+              <img src="images/Prendas.png" alt="Captura de MyCloset"> 
+              <img src="images/Nueva prenda.png" alt="Captura de MyCloset"> 
+              <img src="images/Prenda creada.png" alt="Captura de MyCloset"> 
+              <p class="text-muted text-center py-4">Próximamente capturas del proyecto</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
 

@@ -468,3 +468,48 @@ footer {
     font-size: 1.1rem;
     font-weight: 600;
 }
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-visit {
+  color: #fff;
+  background: var(--primary);
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.btn-visit:hover {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+.modal-content {
+  background: var(--surface-light);
+  border: 1px solid var(--border);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-title {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.modal-images img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
