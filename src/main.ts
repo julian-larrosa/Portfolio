@@ -66,27 +66,36 @@ function initReveal(): void {
 }
 
 function initModal(): void {
-  const modal = document.querySelector<HTMLElement>('[data-modal]')
-  if (!modal) return
+  const modals = Array.from(document.querySelectorAll<HTMLElement>('[data-modal]'))
+  if (!modals.length) return
 
-  const close = () => {
-    modal.hidden = true
-    document.body.style.overflow = ''
-  }
-  const open = () => {
+  const openModal = (modal: HTMLElement) => {
     modal.hidden = false
     document.body.style.overflow = 'hidden'
   }
+  const closeModal = (modal: HTMLElement) => {
+    modal.hidden = true
+    if (!modals.some((m) => !m.hidden)) document.body.style.overflow = ''
+  }
 
   document.querySelectorAll('[data-open-modal]').forEach((btn) => {
-    btn.addEventListener('click', open)
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-open-modal')
+      const target = document.getElementById(targetId ?? '')
+      if (target) openModal(target)
+    })
   })
-  modal.querySelectorAll('[data-close-modal]').forEach((el) => {
-    el.addEventListener('click', close)
+
+  modals.forEach((modal) => {
+    modal.querySelectorAll('[data-close-modal]').forEach((el) => {
+      el.addEventListener('click', () => closeModal(modal))
+    })
   })
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !modal.hidden) close()
+    if (e.key !== 'Escape') return
+    const open = modals.find((m) => !m.hidden)
+    if (open) closeModal(open)
   })
 }
 
