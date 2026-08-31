@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Julián Larrosa, estudiante de Ingeniería en Computación y desarrollador backend Java y Spring Boot.">
+  <title>Julián Larrosa — Backend Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <link rel="icon" href="/images/profile-placeholder.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <header class="topbar" data-topbar>
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#inicio">JL<span class="brand-dot">.</span></a>
+
+      <nav class="nav" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#proyectos">Proyectos</a>
+      </nav>
+
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="mobile-nav" id="siteNav" data-mobile-nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#proyectos">Proyectos</a>
+        <a class="mobile-cv" href="/cv/JULIAN_LARROSA_CV.pdf" target="_blank" rel="noreferrer">Descargar CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero">
+      <div class="wrap hero-grid">
+
+        <div class="hero-copy">
+          <p class="kicker" data-reveal>// Estudiante de ingeniería en computación</p>
+
+          <h1 class="hero-title" data-reveal>
+            Hola, soy <span class="accent-word">Julián Larrosa</span>.
+          </h1>
+
+          <p class="hero-sub" data-reveal>
+            Backend developer enfocado en <strong>Java</strong> y <strong>Spring Boot</strong>.
+            Construyo APIs REST seguras, testeadas y mantenibles.
+          </p>
+
+
+          <div class="hero-actions" data-reveal>
+            <a class="btn btn-primary" href="/cv/JULIAN_LARROSA_CV.pdf" target="_blank" rel="noreferrer">
+              <span class="btn-label">Descargar CV</span>
+              <span class="btn-meta">pdf</span>
+            </a>
+            <a class="btn btn-ghost" href="#proyectos">
+              Ver proyectos
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="socials" data-reveal>
+            <a href="https://github.com/julian-larrosa" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <i class="bi-github devicon"></i><span>Github</span>
+            </a>
+            <a href="https://www.linkedin.com/in/julian-larrosa-b017b12a4/?skipRedirect=true" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <i class="bi-linkedin devicon"></i><span>Linkedin</span>
+            </a>
+            <a href="mailto:julilarrosaacosta@gmail.com" aria-label="Email">
+              <i class="bi-envelope devicon"></i><span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Signature: terminal que "compila" el perfil -->
+        <div class="terminal" data-reveal data-terminal>
+          <div class="terminal-bar">
+            <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+            <span class="t-title">Developer.java — build</span>
+          </div>
+
+          <div class="terminal-body" role="region" aria-label="Salida del sistema">
+            <p class="t-cmd typing"><span class="prompt">$</span> javac Developer.java</p>
+            <p class="t-note">Compilando perfil…</p>
+            <pre class="t-code"><code><span class="k">public class</span> <span class="t">Developer</span> {
+  <span class="k">private final</span> <span class="t">String</span> name = <span class="s">"Julián Larrosa"</span>;
+  <span class="k">private</span> <span class="t">String</span> stack = <span class="s">"Java · Spring Boot"</span>;
+  <span class="k">private</span> <span class="t">int</span> age = <span class="n">21</span>;
+
+  <span class="k">public void</span> build() {
+    learn(); practice(); improve();
+  }
+}</code></pre>
+            <p class="t-cmd"><span class="prompt">$</span> java Developer</p>
+            <p class="t-out ok"><span class="t-ok">✓</span> build successful</p>
+            <p class="t-out dim">status: <span class="k">available</span> for new projects</p>
+          </div>
+
+          <div class="terminal-caret" aria-hidden="true"><span></span></div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi" class="section">
+      <div class="wrap">
+        <h2 class="section-title" data-reveal>Sobre mí</h2>
+
+        <div class="about-grid">
+          <div class="about-copy" data-reveal>
+            <p>
+              Tengo 21 años, estudio <strong>Ingeniería en Computación</strong> en Uruguay (UDELAR)
+              y me especializo en el desarrollo <strong>backend</strong> y el diseño
+              de <strong>APIs REST</strong>.
+            </p>
+            <p>
+              Me encanta trabajar en equipo y me enfoco en ser un miembro activo del grupo para alcanzar los objetivos 
+              propuestos.
+              Puedo ser un poco introvertido pero me gusta socializar (lo cual es algo raro dada la opinión general sobre 
+              los desarrolladores).
+            </p>
+          </div>
+
+          <div class="about-photo" data-reveal>
+            <div class="about-photo-ring">
+              <img
+                src="/images/Yo.png"
+                onerror="this.onerror=null; this.src='images/profile-placeholder.svg';"
+                alt="Foto de Julián Larrosa"
+                class="about-photo-img">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== TECNOLOGÍAS ===== -->
+    <section id="tecnologias" class="section section-tinted">
+      <div class="wrap">
+        <p class="kicker" data-reveal>// stack</p>
+        <h2 class="section-title" data-reveal>Tecnologías</h2>
+
+        <div class="stack-grid">
+          <article class="stack-card" data-reveal>
+            <h3 class="stack-label"><span class="stack-idx">01</span>Backend</h3>
+            <div class="tech-list">
+              <span class="tech"><i class="devicon-java-plain"></i>Java 21</span>
+              <span class="tech"><i class="devicon-spring-plain"></i>Spring Boot</span>
+              <span class="tech">Spring Security</span>
+              <span class="tech">JWT</span>
+            </div>
+          </article>
+
+          <article class="stack-card" data-reveal>
+            <h3 class="stack-label"><span class="stack-idx">02</span>Datos</h3>
+            <div class="tech-list">
+              <span class="tech"><i class="devicon-postgresql-plain"></i>PostgreSQL</span>
+              <span class="tech">JPA / Hibernate</span>
+              <span class="tech">Flyway</span>
+            </div>
+          </article>
+
+          <article class="stack-card" data-reveal>
+            <h3 class="stack-label"><span class="stack-idx">03</span>Herramientas</h3>
+            <div class="tech-list">
+              <span class="tech"><i class="devicon-git-plain"></i>Git</span>
+              <span class="tech"><i class="devicon-github-original"></i>GitHub</span>
+              <span class="tech"><i class="devicon-docker-plain"></i>Docker</span>
+              <span class="tech"><i class="devicon-maven-plain"></i>Maven</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="section">
+      <div class="wrap">
+        <p class="kicker" data-reveal>// trabajo</p>
+        <h2 class="section-title" data-reveal>Proyectos</h2>
+
+        <div class="projects-grid">
+
+          <article class="project" data-reveal>
+            <div class="project-head">
+              <span class="project-idx">_01</span>
+              <span class="status status-dev">en desarrollo</span>
+            </div>
+            <h3 class="project-title">El Fútbol de los Jueves</h3>
+            <p class="project-desc">
+              Plataforma para organizar los partidos semanales de un grupo de
+              amigos, gestionar jugadores y generar equipos equilibrados.
+            </p>
+            <ul class="project-points">
+              <li>Registro y gestión de jugadores.</li>
+              <li>Confirmación de asistencia semanal.</li>
+              <li>Generación de equipos equilibrados.</li>
+              <li>Historial de partidos y resultados.</li>
+              <li>Estadísticas individuales y grupales.</li>
+            </ul>
+            <div class="tags">
+              <span>Java</span><span>Spring Boot</span><span>React</span><span>PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <button class="btn-visit" data-open-modal="futbolModal">
+                Ver capturas <span aria-hidden="true">↗</span>
+              </button>
+              <a class="project-link" href="https://github.com/julian-larrosa/futboldelosjueves" target="_blank" rel="noreferrer">
+                Repositorio <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-head">
+              <span class="project-idx">_02</span>
+              <span class="status status-dev">en desarrollo</span>
+            </div>
+            <h3 class="project-title">ESRE Finance API</h3>
+            <p class="project-desc">
+              API REST para gestionar finanzas personales: usuarios, categorías,
+              ingresos y gastos, con seguridad de punta a punta.
+            </p>
+            <ul class="project-points">
+              <li>Autenticación y autorización con JWT.</li>
+              <li>Spring Security y contraseñas cifradas.</li>
+              <li>Validaciones y manejo global de errores.</li>
+              <li>PostgreSQL, JPA, MapStruct y Swagger.</li>
+            </ul>
+            <div class="tags">
+              <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>JWT</span><span>Docker</span>
+            </div>
+            <a class="project-link" href="https://github.com/julian-larrosa/esre-finance-api" target="_blank" rel="noreferrer">
+              Ver repositorio <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="project" data-reveal>
+            <div class="project-head">
+              <span class="project-idx">_03</span>
+              <span class="status status-done">completado</span>
+            </div>
+            <h3 class="project-title">MyCloset</h3>
+            <p class="project-desc">
+              Aplicación web para gestionar tu armario: organizá tu ropa, creá
+              outfits y llevá el registro de tus prendas favoritas.
+            </p>
+            <ul class="project-points">
+              <li>Autenticación segura con JWT y Spring Security.</li>
+              <li>API REST completa para gestión de prendas.</li>
+              <li>Backend robusto con Spring Boot y PostgreSQL.</li>
+              <li>Desplegado en Render con Docker.</li>
+            </ul>
+            <div class="tags">
+              <span>Java 25</span><span>Spring Boot 4</span><span>Spring Security</span><span>JWT</span><span>PostgreSQL</span><span>Neon</span><span>Docker</span><span>Render</span>
+            </div>
+            <div class="project-links">
+              <button class="btn-visit" data-open-modal="myclosetModal">
+                Ver capturas <span aria-hidden="true">↗</span>
+              </button>
+              <a class="project-link" href="https://github.com/julian-larrosa/mycloset" target="_blank" rel="noreferrer">
+                Repositorio <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <!-- ===== Modal MyCloset ===== -->
+  <div class="modal" id="myclosetModal" data-modal role="dialog" aria-modal="true" aria-labelledby="myclosetModalLabel" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="document">
+      <div class="modal-head">
+        <h3 id="myclosetModalLabel" class="modal-title">MyCloset — capturas</h3>
+        <button class="modal-close" data-close-modal aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body">
+        <img src="/images/Inicio.png" alt="Captura de MyCloset: pantalla de inicio">
+        <img src="/images/Menu principal.png" alt="Captura de MyCloset: menú principal">
+        <img src="/images/Menu principal 2.png" alt="Captura de MyCloset: menú principal">
+        <img src="/images/Categoria.png" alt="Captura de MyCloset: categorías">
+        <img src="/images/Nueva categoria.png" alt="Captura de MyCloset: nueva categoría">
+        <img src="/images/Prendas.png" alt="Captura de MyCloset: lista de prendas">
+        <img src="/images/Nueva prenda.png" alt="Captura de MyCloset: nueva prenda">
+        <img src="/images/Prenda creada.png" alt="Captura de MyCloset: prenda creada">
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Modal El Fútbol de los Jueves ===== -->
+  <div class="modal" id="futbolModal" data-modal role="dialog" aria-modal="true" aria-labelledby="futbolModalLabel" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="document">
+      <div class="modal-head">
+        <h3 id="futbolModalLabel" class="modal-title">El Fútbol de los Jueves — capturas</h3>
+        <button class="modal-close" data-close-modal aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body">
+        <img src="/images/futbol/jugadores.png" onerror="this.parentNode.removeChild(this)" alt="Captura: gestión de jugadores">
+        <img src="/images/futbol/asistencia.png" onerror="this.parentNode.removeChild(this)" alt="Captura: confirmación de asistencia">
+        <img src="/images/futbol/equipos.png" onerror="this.parentNode.removeChild(this)" alt="Captura: generación de equipos">
+        <img src="/images/futbol/estadisticas.png" onerror="this.parentNode.removeChild(this)" alt="Captura: estadísticas">
+        <p class="placeholder-note">Próximamente las capturas del proyecto</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span><span id="currentYear"></span> © Julián Larrosa</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.ts"></script>
+</body>
+</html>
